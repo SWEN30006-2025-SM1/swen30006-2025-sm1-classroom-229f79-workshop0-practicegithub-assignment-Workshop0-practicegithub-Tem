@@ -36,4 +36,11 @@ public class CalculatorTest {
         RuntimeException exception = Assert.assertThrows(RuntimeException.class, () -> calculator.divide(10, 0));
         Assert.assertEquals("Divide by zero", exception.getMessage());
     }
+
+    @Test
+    public void testMultiplicationOfTwoIntegers() {
+        int result = calculator.multiply(2, 3);
+        Assert.assertEquals(6, result);
+    }
+
 }
